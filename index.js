@@ -8,7 +8,7 @@ var boom = require('boom')
 module.exports = schemaMiddleware
 
 function schemaMiddleware (schema) {
-  assert.ok(typeof schema === 'string' || typeof schema === 'object', 'middleware.schema: schema should be type string or type object')
+  assert.ok(typeof schema === 'string' || typeof schema === 'object', 'json-schema-middleware: schema should be type string or type object')
   var validate = isMyJsonValid(schema)
 
   return function (req, res, ctx, done) {
