@@ -1,0 +1,33 @@
+{
+  "name": "json-schema-middleware",
+  "version": "1.0.0",
+  "description": "middleware to validate json schema",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard && nyc tap test.js",
+    "coverage": "nyc report --reporter=text-lcov > coverage.lcov"
+  },
+  "keywords": [
+    "json-schema",
+    "middleware"
+  ],
+  "repository": "shipharbor/json-schema-middleware",
+  "author": "Irina Shestak",
+  "license": "MIT",
+  "dependencies": {
+    "boom": "^4.2.0",
+    "concat-stream": "^1.6.0",
+    "explain-error": "^1.0.3",
+    "fast-json-parse": "^1.0.2",
+    "is-my-json-valid": "^2.16.0"
+  },
+  "devDependencies": {
+    "dev-null": "^0.1.1",
+    "get-server-port": "^1.0.0",
+    "merry": "^4.7.2",
+    "nyc": "^10.1.2",
+    "request": "^2.80.0",
+    "tap": "^10.3.0",
+    "tape": "^4.6.3"
+  }
+}
