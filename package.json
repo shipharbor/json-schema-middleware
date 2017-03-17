@@ -1,6 +1,6 @@
 {
   "name": "json-schema-middleware",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "middleware to validate json schema",
   "main": "index.js",
   "scripts": {
